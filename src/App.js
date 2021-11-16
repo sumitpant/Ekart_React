@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './components/home-react/Home';
+import Cart from './components/cart-react/Cart';
+import Login from './components/login_react/Login';
+import User from './components/user-react/User';
+import Deals from './components/deals_react/Deals';
+import ItemDetail from './components/item-details/ItemDetail';
+import ProtectedRoutes from './protected/ProtectedRoutes'
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route path ='/cart' element={<Cart/>} />
+          <Route path ='/login' element={<Login/>} />
+          <Route path ='/user' element={<User/>} />
+          <Route path ='/deals' element={<ProtectedRoutes/>} />
+          <Route path ="/detail/:item" element={<ItemDetail/>} />
+        </Routes>
+       
+      </Router>
+
+
     </div>
   );
 }

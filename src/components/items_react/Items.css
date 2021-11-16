@@ -1,0 +1,23 @@
+.products{
+    display: flex;
+    height: 35%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 45vh;
+    padding: 5px;
+   
+}
+@media screen and (max-width: 776px) {
+    .products{
+        display: flex;
+        flex-direction: column;
+        height: 35%;
+       
+        width: 100%;
+        padding: 5px;
+      
+    }
+    
+
+}

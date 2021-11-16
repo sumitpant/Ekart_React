@@ -1,0 +1,130 @@
+.navbar__items{
+    align-items: center;
+      display: flex;
+      justify-content: space-around;
+      background-color: rgba(247,245,245 ,0.4);
+  }
+  .nav__items{
+      flex: 0.60;
+      display: flex;
+      justify-content:space-around;
+      padding: 10px;
+      align-items:center;
+  }
+  .list{
+      list-style: none;
+      padding: 10px;
+      font-family:'Verdana';
+      font-weight: 400;
+      
+  }
+
+  .list:hover{
+      cursor: pointer;
+      background-color: rgba(237, 233, 232,1);
+      border-radius: 10px;
+  }
+
+  
+  .list:active{
+      transition: all 400ms ease-in;
+      transform :scale(0.8) ;
+     
+  }
+
+  .expand{
+      display: none;
+  }
+  .navbar{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .search__div{
+      display: flex;
+      align-items: center;
+      background-color:white;
+      padding: 10px;
+      border-radius:5px;
+  }
+  .text__search{
+      border:none;
+      outline: none;
+      padding: 4px;
+  }
+ 
+  
+  @media screen and (max-width: 776px) {
+    
+      .nav__items{
+          display:flex;
+          flex-direction:column;
+      }
+      .logo{
+          display: none;
+      }
+      .expand{
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 10px;
+          margin: 10px;
+          background-color: beige;
+          border-radius:10px
+      }
+      .nav__items{
+          display: none;
+          width: 20vh;
+          margin-top: 5vh;
+      }
+  
+      .navbar{
+          position: absolute;
+          right: 0;
+          z-index: 999;
+          height: 100%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          width: 0;
+           
+        
+      }
+      .navbar__items{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 100%;
+      
+      }
+      .navbar{
+          padding: 0;
+      }
+      .list:hover{
+          cursor: pointer;
+          background-color: rgba(237, 233, 232,1);
+          border-radius: 5px;
+      }
+   
+  
+      .list{
+          list-style: none;
+          width: 100%;
+          font-family:'Verdana';
+          font-weight: 400;
+          border-bottom: 1px solid grey;
+          margin-bottom: 20px;
+          
+      }
+      .search__div{
+        display: none;
+    }
+    .navbar__items{
+        align-items: center;
+          display: flex;
+          justify-content: space-around;
+          background-color: rgb(238, 228, 228)
+      }
+
+  
+          
+  
+    }
+  

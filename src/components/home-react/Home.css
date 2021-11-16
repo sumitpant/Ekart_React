@@ -1,0 +1,26 @@
+.div__products_top{
+    height: 25%;
+    margin-top: -22vw;
+    margin-bottom:20px;
+  
+}
+.div__products{
+    margin-bottom: 20px;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-20vw
+}
+
+@media screen and (max-width: 776px) {
+    .div__products_top{
+        margin-top: -22vw;
+        margin-bottom:20px;
+
+      
+    }
+    
+
+}

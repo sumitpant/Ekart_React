@@ -1,0 +1,1 @@
+export const GETALL ='http://localhost:3031/get-all'

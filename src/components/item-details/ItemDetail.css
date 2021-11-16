@@ -1,0 +1,41 @@
+.img_det{
+    width:400px;
+    height:400px;
+    object-fit:contain
+}
+.detail{
+    display:flex;
+    justify-content:space-around
+
+}
+.det_options{
+    display:flex;
+    width:50%;
+}
+.details{
+    flex:0.60
+}
+.description >p{
+    font-size:1.5vw;
+    color:grey;
+}
+.detail{
+    margin-top:10px
+}
+
+@media screen and (max-width: 776px) {
+
+    .detail{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        margin: 10px
+    
+    }
+    .description >p{
+        font-size:3vw;
+        color:grey;
+    }
+
+}
